@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - BookStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BookStore</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html" class="active">Categories</a>
+                <a href="cart.html">Cart <span class="cart-count">0</span></a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories-section">
+            <div class="categories-sidebar">
+                <h2>Filter By</h2>
+                <div class="category-filters">
+                    <h3>Categories</h3>
+                    <div class="filter-group">
+                        <label><input type="checkbox" value="fiction"> Fiction</label>
+                        <label><input type="checkbox" value="non-fiction"> Non-Fiction</label>
+                        <label><input type="checkbox" value="science"> Science</label>
+                        <label><input type="checkbox" value="romance"> Romance</label>
+                        <label><input type="checkbox" value="mystery"> Mystery</label>
+                        <label><input type="checkbox" value="fantasy"> Fantasy</label>
+                    </div>
+
+                    <h3>Price Range</h3>
+                    <div class="filter-group">
+                        <input type="range" id="priceRange" min="0" max="100" value="100">
+                        <span id="priceValue">$100</span>
+                    </div>
+
+                    <h3>Rating</h3>
+                    <div class="filter-group">
+                        <label><input type="radio" name="rating" value="4"> 4+ Stars</label>
+                        <label><input type="radio" name="rating" value="3"> 3+ Stars</label>
+                        <label><input type="radio" name="rating" value="2"> 2+ Stars</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="books-container">
+                <div class="books-header">
+                    <h2>All Books</h2>
+                    <select id="sortBooks">
+                        <option value="popularity">Sort by Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+                <div class="books-grid">
+                    <!-- Books will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About BookStore</h3>
+                <p>Your one-stop destination for all your reading needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BookStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
